@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio de Création Interactif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Studio de Création Interactif</h1>
+        <div id="canvas">
+            <div class="box"></div>
+        </div>
+        <div class="controls">
+            <div class="control-group">
+                <label for="color">Couleur</label>
+                <input type="color" id="color" value="#3498db">
+            </div>
+            <div class="control-group">
+                <label for="radius">Coins arrondis</label>
+                <input type="range" id="radius" min="0" max="50" value="10">
+                <span id="radiusValue">10px</span>
+            </div>
+            <div class="control-group">
+                <label for="size">Taille</label>
+                <input type="range" id="size" min="50" max="300" value="200">
+                <span id="sizeValue">200px</span>
+            </div>
+            <div class="control-group">
+                <label for="rotation">Rotation</label>
+                <input type="range" id="rotation" min="0" max="360" value="0">
+                <span id="rotationValue">0°</span>
+            </div>
+            <div class="control-group">
+                <label for="customText">Texte</label>
+                <input type="text" id="customText" placeholder="Entrez votre texte">
+            </div>
+            <div class="control-group">
+                <label for="animation">Animation</label>
+                <select id="animation">
+                    <option value="none">Aucune</option>
+                    <option value="rotate">Rotation</option>
+                    <option value="pulse">Pulsation</option>
+                    <option value="shake">Tremblement</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
